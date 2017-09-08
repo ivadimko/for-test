@@ -11,59 +11,197 @@
 </head>
 <body>
 <div class="body-wrapper">
-<header id="header" class="header">
 
-    <nav class="header__nav">
-        <ul class="header__menu">
-            <li><a href="#section1">Секция 1</a></li>
-            <li><a href="#section2">Секция 2</a></li>
-            <li><a href="#section3">Секция 3</a></li>
-        </ul>
-    </nav>
-
-    <button class="burger header__burger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-</header>
-<div class="mobile-nav js_mobile-nav">
-    <nav>
-        <ul class="mobile-nav__menu">
-        </ul>
-    </nav>
-    <button class="burger mobile-nav__burger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-</div>
 
 <main id="main">
     
-    <div class="entry-content">
-        <div class="container">
-            <div class="row">
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-            </div>
-        </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    	<symbol id="star">
+    		<path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+    	</symbol>
+    </svg>
+    <h2>Responsive stars rating with increments of 0.1</h2>
+    <div class="rating-wrap">
+    	<p>Rating = 1.2</p>
+    	<div class="stars" data-ratingValue="1.2">
+    		<svg viewBox="0 0 270 46">
+    			<use href="#star"></use>
+    			<use href="#star" x=55></use>
+    			<use href="#star" x=110></use>
+    			<use href="#star" x=165></use>
+    			<use href="#star" x=220></use>
+    		</svg>
+    		<div class="stars--fill">
+    			<svg viewBox="0 0 270 46">
+    				<use href="#star"></use>
+    				<use href="#star" x=55></use>
+    				<use href="#star" x=110></use>
+    				<use href="#star" x=165></use>
+    				<use href="#star" x=220></use>
+    			</svg>
+    		</div>
+    	</div>
     </div>
-    <div><i class="fa fa-battery-three-quarters" aria-hidden="true"></i></div>
+    <div class="rating-wrap">
+    	<p>Rating = 2.5</p>
+    	<div class="stars" data-ratingValue="2.5">
+    		<svg viewBox="0 0 270 46">
+    			<use href="#star"></use>
+    			<use href="#star" x=55></use>
+    			<use href="#star" x=110></use>
+    			<use href="#star" x=165></use>
+    			<use href="#star" x=220></use>
+    		</svg>
+    		<div class="stars--fill">
+    			<svg viewBox="0 0 270 46">
+    				<use href="#star"></use>
+    				<use href="#star" x=55></use>
+    				<use href="#star" x=110></use>
+    				<use href="#star" x=165></use>
+    				<use href="#star" x=220></use>
+    			</svg>
+    		</div>
+    	</div>
+    </div>
+    <div class="rating-wrap">
+    	<p>Rating = 3.0</p>
+    	<div class="stars" data-ratingValue="3">
+    		<svg viewBox="0 0 270 46">
+    			<use href="#star"></use>
+    			<use href="#star" x=55></use>
+    			<use href="#star" x=110></use>
+    			<use href="#star" x=165></use>
+    			<use href="#star" x=220></use>
+    		</svg>
+    		<div class="stars--fill">
+    			<svg viewBox="0 0 270 46">
+    				<use href="#star"></use>
+    				<use href="#star" x=55></use>
+    				<use href="#star" x=110></use>
+    				<use href="#star" x=165></use>
+    				<use href="#star" x=220></use>
+    			</svg>
+    		</div>
+    	</div>
+    </div>
+    <div class="rating-wrap">
+    	<p>Rating = 4.8</p>
+    	<div class="stars" data-ratingValue="4.8">
+    		<svg viewBox="0 0 270 46">
+    			<use href="#star"></use>
+    			<use href="#star" x=55></use>
+    			<use href="#star" x=110></use>
+    			<use href="#star" x=165></use>
+    			<use href="#star" x=220></use>
+    		</svg>
+    		<div class="stars--fill">
+    			<svg viewBox="0 0 270 46">
+    				<use href="#star"></use>
+    				<use href="#star" x=55></use>
+    				<use href="#star" x=110></use>
+    				<use href="#star" x=165></use>
+    				<use href="#star" x=220></use>
+    			</svg>
+    		</div>
+    	</div>
+    </div>
+    <h2>SVG Animation</h2>
+    <div class="rating-wrap">
+    	<p>Rating = 1.4</p>
+    	<div class="stars" data-ratingValue="1.4">
+    		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 46" height="46" width="270" class="animated" fill="none" stroke="blue"  >
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m80,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m135,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m190,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m245,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    		</svg>
+    		<div class="stars--fill animatedFill">
+    			<svg viewBox="0 0 270 46">
+    				<use href="#star"></use>
+    				<use href="#star" x=55></use>
+    				<use href="#star" x=110></use>
+    				<use href="#star" x=165></use>
+    				<use href="#star" x=220></use>
+    			</svg>
+    		</div>
+    	</div>
+    </div>
+    <div class="rating-wrap">
+    	<p>Rating = 2.3</p>
+    	<div class="stars" data-ratingValue="2.3">
+    		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 46" height="46" width="270" class="animated" fill="none" stroke="blue"  >
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m80,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m135,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m190,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m245,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    		</svg>
+    		<div class="stars--fill animatedFill">
+    			<svg viewBox="0 0 270 46">
+    				<use href="#star"></use>
+    				<use href="#star" x=55></use>
+    				<use href="#star" x=110></use>
+    				<use href="#star" x=165></use>
+    				<use href="#star" x=220></use>
+    			</svg>
+    		</div>
+    	</div>
+    </div>
+    <div class="rating-wrap">
+    	<p>Rating = 3.5</p>
+    	<div class="stars" data-ratingValue="3.5">
+    		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 46" height="46" width="270" class="animated" fill="none" stroke="blue"  >
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m80,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m135,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m190,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m245,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    		</svg>
+    		<div class="stars--fill animatedFill">
+    			<svg viewBox="0 0 270 46">
+    				<use href="#star"></use>
+    				<use href="#star" x=55></use>
+    				<use href="#star" x=110></use>
+    				<use href="#star" x=165></use>
+    				<use href="#star" x=220></use>
+    			</svg>
+    		</div>
+    	</div>
+    </div>
+    <div class="rating-wrap">
+    	<p>Rating = 4.7</p>
+    	<div class="stars" data-ratingValue="4.7">
+    		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 46" height="46" width="270" class="animated" fill="none" stroke="blue"  >
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m80,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m135,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m190,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+    			<path style="stroke-dashoffset: 180; stroke-dasharray: 180, 182;" d="m245,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/> 
+    		</svg>
+    		<div class="stars--fill animatedFill">
+    			<svg viewBox="0 0 270 46">
+    				<use href="#star"></use>
+    				<use href="#star" x=55></use>
+    				<use href="#star" x=110></use>
+    				<use href="#star" x=165></use>
+    				<use href="#star" x=220></use>
+    			</svg>
+    		</div>
+    	</div>
+    </div>
 </main>
 </div>
 <footer id="footer" class="footer">
 
 </footer>
 
-<!-- <script
+<script
 src="https://code.jquery.com/jquery-3.2.1.min.js"
 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="/assets/scripts/libs/jquery/jquery-3.2.1.min.js"><\/script>')</script> -->
+<script>window.jQuery || document.write('<script src="/assets/scripts/libs/jquery/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="assets/scripts/libs/vivus/dist/vivus.min.js"></script>
 <script src="assets/scripts/common.js"></script>
 </body>
 </html>

@@ -1,8 +1,44 @@
-.section{
-    &__header{
-        text-align: center;
-        font-family: 'roboto-example', $helvetica;
-        font-size: 2rem;
-        font-weight: bold;
-    }
+h2{
+  text-align: center;
+  margin: 30px 0 10px;
+  &:nth-child(2){
+  	margin-top: 10px;
+  }
+}
+p{
+  margin: 0;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.rating-wrap{
+  display: inline-block;
+}
+.stars{
+  margin-right: 30px;
+	height: 50px;
+	display: inline-block;
+	//width: 270px;
+	position: relative;
+	svg{
+		height: 100%;
+		width: auto;
+		fill: none;
+		stroke: blue;
+		vertical-align: top;
+	}
+	&--fill{
+		@extend .stars;
+		position: absolute;
+		overflow: hidden;
+		width: 0;
+		top: 0;
+		left: 0;
+		svg{
+			fill: blue;
+			stroke: blue;
+		}
+	}
+}
+.animated{
+	stroke-dashoffset: 180;
 }
